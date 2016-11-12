@@ -1,21 +1,21 @@
-# EPAgent Plugiins for RabbitMQ
+# EPAgent Plug-ins for RabbitMQ
 
 # Description
 
-The EPAgent Plug-ins for RabbitMQ monitor RabbitMQ messaging broker.
+The EPAgent Plug-ins for RabbitMQ monitors RabbitMQ messaging broker.
 
-* The RabbitMQ_Bindings.pl script gathers binding statistics.  
-* The RabbitMQ_Channels.pl script gathers channel statistics.  
-* The RabbitMQ_Connections.pl script gathers connection statistics.  
-* The RabbitMQ_Exchanges.pl script gathers exchange statistics.    
-* The RabbitMQ_Nodes.pl script gathers node statistics.  
+* The RabbitMQ_Bindings.pl script gathers binding statistics.
+* The RabbitMQ_Channels.pl script gathers channel statistics.
+* The RabbitMQ_Connections.pl script gathers connection statistics.
+* The RabbitMQ_Exchanges.pl script gathers exchange statistics.
+* The RabbitMQ_Nodes.pl script gathers node statistics.
 * The RabbitMQ_Queues.pl script gathers queue statistics.
 
 For installation instructions, see the README.md file.
 
 #Short Description
 
-The EPAgent Plug-ins for RabbitMQ monitor RabbitMQ messaging broker.
+The EPAgent Plug-ins for RabbitMQ monitors RabbitMQ messaging broker.
 
 # APM Version
 Tested with CA APM 9.1.4.0 Enterprise Manager, EPAgent 9.1.4.0, RabbitMQ 3.3.0, PERL 5.10.1, and Python 2.7.6.
@@ -28,6 +28,8 @@ Apache License, version 2.0. See [Licensing](https://www.apache.org/licenses/LIC
 
 # Prerequisite
 An installed and configured EPAgent.
+
+Find the version 9.1 to 9.5 documentation on [CA Support,](https://support.ca.com)
 
 Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.](https://docops.ca.com)
 
@@ -52,7 +54,7 @@ Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.
 ```
 # Usage
 
-1. Download a copy of the RabbitMQ Management Commandline Tool [rabbitmqadmin.py.](https://www.rabbitmq.com/management-cli.html)
+1. Download a copy of the RabbitMQ Management Commandline Tool, [rabbitmqadmin.py.](https://www.rabbitmq.com/management-cli.html)
 2. Place the rabbitmqadmin.py file into the <*EPAgent_Home*>\epaplugins directory.
 3. Start the EPAgent using the control script in the <*EPAgent_Home*>/bin directory.
 
@@ -63,11 +65,9 @@ You can also manually execute the plug-in from a console and use the PERL built-
 
 Carefully read each plug-in POD section for details about how to run the plug-ins in debug mode. When you are using a newer version than what was tested, the vendor has probabably changed the number of columns in the TSV output. You will notice the difference by comparing the output to the program. Adjust the program accordingly.
 
-If you still need assistance after testing, please open a new discussion on [CA APM DEV](http://bit.ly/caapm_dev).
-
 # Limitation
 
-Some users have reported and verified that the EPAgent Plug-ins for RabbitMQ output has changed in newer versions of RabbitMQ.  
+Some users have reported and verified that the EPAgent Plug-ins for RabbitMQ output has changed in newer versions of RabbitMQ.
 Validate the new output against the the output used to create the EPAgent Plug-ins for RabbitMQ.
 
 # Support
