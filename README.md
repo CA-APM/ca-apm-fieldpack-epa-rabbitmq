@@ -2,7 +2,7 @@
 
 # Description
 
-The EPAgent Plug-ins for RabbitMQ monitors RabbitMQ messaging broker.
+EPAgent Plug-ins for RabbitMQ monitor RabbitMQ messaging broker.
 
 * The RabbitMQ_Bindings.pl script gathers binding statistics.
 * The RabbitMQ_Channels.pl script gathers channel statistics.
@@ -15,7 +15,7 @@ For installation instructions, see the README.md file.
 
 #Short Description
 
-The EPAgent Plug-ins for RabbitMQ monitors RabbitMQ messaging broker.
+EPAgent Plug-ins for RabbitMQ monitor RabbitMQ messaging broker.
 
 # APM Version
 Tested with CA APM 9.1.4.0 Enterprise Manager, EPAgent 9.1.4.0, RabbitMQ 3.3.0, PERL 5.10.1, and Python 2.7.6.
@@ -29,11 +29,11 @@ Apache License, version 2.0. See [Licensing](https://www.apache.org/licenses/LIC
 # Prerequisite
 An installed and configured EPAgent.
 
-Find the version 9.1 to 9.5 documentation on [CA Support,](https://support.ca.com)
+Find the version 9.1 to 9.5 documentation on [CA Support.](https://support.ca.com)
 
-Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.](https://docops.ca.com)
+Find the version 9.6 to 10.x documentation on [the CA APM documentation wiki.](https://docops.ca.com)
 
-# Plug-in Installation and Configuration
+# Install and Configure EPAgent Plug-ins for RabbitMQ
 
 1. Extract the plug-in to <*EPAgent_Home*>\epaplugins.
 2. Configure the IntroscopeEPAgent.properties file in <*EPAgent_Home*> by adding these stateless plug-in properties:
@@ -52,9 +52,9 @@ Find the version 9.6 to 10.x documentation on [the CA APM wiki at docops.ca.com.
 	introscope.epagent.stateless.QUEUES.command=perl <epa_home>/epaplugins/rabbitmq/RabbitMQ_Queues.pl --host=HOST_OR_IP_ADDR --port=12345 --user=USERNAME --pswd=PASSWORD
 	introscope.epagent.stateless.QUEUES.delayInSeconds=900
 ```
-# Usage
+# Use EPAgent Plug-ins for RabbitMQ
 
-1. Download a copy of the RabbitMQ Management Commandline Tool, [rabbitmqadmin.py.](https://www.rabbitmq.com/management-cli.html)
+1. Download the [RabbitMQ Management Commandline Tool, rabbitmqadmin.py.](https://www.rabbitmq.com/management-cli.html)
 2. Place the rabbitmqadmin.py file into the <*EPAgent_Home*>\epaplugins directory.
 3. Start the EPAgent using the control script in the <*EPAgent_Home*>/bin directory.
 
